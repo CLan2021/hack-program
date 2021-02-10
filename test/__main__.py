@@ -5,6 +5,7 @@ Command line interface for menu.
 """
 
 import argparse
+import random
 from test.foodmenu import menu
 
 def parse_command_line():
@@ -25,6 +26,7 @@ def parse_command_line():
         help = "Returns a lunch option",
         action = "store_true")
 
+    # add long args
     parser.add_argument(
         "--dinner",
         help = "Returns a dinner option",
@@ -32,10 +34,9 @@ def parse_command_line():
 
     # parse args
     args = parser.parse_args()
-    return args
-
+    
     # Check that only one argument was entered.
-    if sum([args.breakfast, args.lunch, args.dinner, args.info]) > 1:
+    if sum([args.breakfast, args.lunch, args.dinner]) > 1:
         raise SystemExit(
             "Enter only one argument at a time.")
     return args

@@ -1,4 +1,4 @@
-#! usr/bin/env python
+#!/usr/bin/env python
 
 """
 A function that generates a menu for what to eat
