@@ -1,0 +1,3 @@
+[console_scripts]
+foodmenu = foodmenu.__main__:main
+

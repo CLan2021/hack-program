@@ -17,6 +17,6 @@ setup(
     classifiers=["Programming Language :: Python :: 3"],
     entry_points={
         # "console_scripts": ["module = package/directory.__main__:main"]
-        "console_scripts": ["foodmenu = test.__main__:main"]
+        "console_scripts": ["foodmenu = foodmenu.__main__:main"]
     },
 )

@@ -2,4 +2,4 @@
 
 __version__ = "0.0.1"
 
-from test.foodmenu import menu
+from foodmenu.foodmenu import menu
