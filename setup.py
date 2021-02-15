@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name="menu",
-    version="0.0.1",
+    version="0.0.2",
     author="Catherine Lan",
     author_email="yl4289@columbia.edu",
     license="GPLv3",

@@ -6,7 +6,7 @@ Command line interface for menu.
 
 import argparse
 import random
-from foodmenu.foodmenu import menu
+from foodmenu.foodmenu import menu, option
 
 def parse_command_line():
     "Parses arguments for the menu funtion"
@@ -50,10 +50,13 @@ def main():
     # pass argument to call compliments function
     if args.breakfast:
         menu("breakfast")
+        option()
     elif args.lunch:
         menu("lunch")
+        option()
     elif args.dinner:
         menu("dinner")
+        option()
 
 
 if __name__ == "__main__":
